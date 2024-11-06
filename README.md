@@ -1,50 +1,21 @@
-# React + TypeScript + Vite
+#Text Formatter with Bold Markdown Support#
+Overview
+This project implements a simple text formatter that converts Markdown-style bold syntax (* text) into HTML with bold styling. It leverages React.js, Draft.js, Tailwind CSS, and TypeScript to provide a customizable and efficient way of transforming text within a rich text editor.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Bold Markdown Support: Converts * text into <span class="font-bold">text</span>.
+React Integration: Built using React for component-based UI.
+Rich Text Editing: Uses Draft.js for rich text editing capabilities.
+Customizable Styles: Easily adjust the bold text style via Tailwind CSS classes.
+TypeScript Support: Written in TypeScript for better type safety and development experience.
+Technologies Used
+React.js: For building the user interface with reusable components.
+Draft.js: For handling rich text input and formatting.
+Tailwind CSS: For utility-first CSS styling, including custom text styles.
+TypeScript: For static typing and better code maintainability.
+JavaScript (ES6): For text manipulation using regular expressions.
+License
+This project is licensed under the MIT License.
+© 2024 #Mohammad Tarique#
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
