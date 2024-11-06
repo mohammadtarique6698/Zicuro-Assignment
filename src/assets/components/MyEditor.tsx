@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Editor, EditorState, CompositeDecorator, ContentBlock } from 'draft-js'; 
+import { Editor, EditorState, CompositeDecorator } from 'draft-js'; 
 import 'draft-js/dist/Draft.css';
 
-// Decorator with proper types
 const getDecorator = () =>
   new CompositeDecorator([
     {
@@ -107,7 +106,7 @@ const MyEditor = () => {
     return formattedText;
   };
 
-  const handleEditorChange = (newState: EditorState) => {
+  const handleEditorChange = (newState: any) => {
     setEditorState(newState);
   };
 
