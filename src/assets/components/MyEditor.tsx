@@ -113,7 +113,7 @@ const MyEditor = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
       <h1 className="text-xl font-bold mb-4">
-        Demo editor by Mohammad Tarique;
+        Demo editor by Mohammad Tarique
       </h1>
       <div className="w-full max-w-5xl border border-gray-300 rounded-lg py-5 px-3 bg-white shadow-md text-center">
         <Editor
